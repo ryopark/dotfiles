@@ -1,0 +1,23 @@
+[core]
+	excludesfile = /Users/paku/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = ryoji park
+	email = ryojip@flywheel.jp
+[commit]
+	template = /Users/paku/.stCommitMsg
+[push]
+	default = current
+[rebase]
+	autosquash = true
+[alias]
+	uncommit = reset HEAD~
+[help]
+	autoCorrect = 1
+[merge]
+    conflictstyle = diff3
